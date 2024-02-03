@@ -174,8 +174,8 @@ body {
   font-family: "HelveticaNeueCyr", sans-serif;
   color: #E2DCC8;
   background: #1C1C1C;
-  /* background: -webkit-gradient(linear, left top, right top, from(#241f1f), color-stop(32%, #241f1f), to(#4a4746)); */
-  /* background: linear-gradient(to right, #241f1f 0%, #241f1f 32%, #4a4746 100%); } */
+  background: -webkit-gradient(linear, left top, right top, from(#241f1f), color-stop(32%, #241f1f), to(#4a4746));
+  background: linear-gradient(to right, #241f1f 0%, #241f1f 32%, #4a4746 100%); }
 
 input, button {
   -webkit-appearance: none; }
@@ -549,7 +549,7 @@ body::-webkit-scrollbar-thumb {
 
 .page-title {
   background: #1C1C1C;
-  background: #1c1c1c; }
+  background: #241f1f; }
   @media screen and (max-width: 768px) and (orientation: portrait) {
     .page-title {
       display: none; } }
