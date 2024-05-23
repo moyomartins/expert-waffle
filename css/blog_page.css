@@ -93,7 +93,7 @@
 
 .blog_page-text {
   margin: 0 auto;
-  width: 38.02083vw; }
+  width: 42vw; }
   @media screen and (max-width: 768px) and (orientation: portrait) {
     .blog_page-text {
       width: 100%; } }
@@ -122,7 +122,7 @@
   font-size: 2.34375vw;
   line-height: 2.86458vw;
   text-transform: uppercase;
-  color: #e2dcc8; }
+  color: #bdf100; }
   @media screen and (max-width: 768px) and (orientation: portrait) {
     .blog_page-h1 {
       margin-bottom: 9.06667vw;
@@ -149,7 +149,7 @@
       line-height: 140%;
       display: block; }
     .blog_page-menu li.active a {
-      color: #b66449; }
+      color: #1c1c1c; }
 
 .blog_page-reviws {
   position: relative;
@@ -231,7 +231,7 @@
         font-size: 4.26667vw;
         line-height: 6.93333vw; } }
     .blog_page-tags_link:hover {
-      color: #b66449; }
+      color: #bdf100; }
 
 .blog_page-share {
   display: block;
