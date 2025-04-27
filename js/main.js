@@ -49,6 +49,51 @@
 /*-------------------------------------------------------------------------------
   2. Custom scripts
 -------------------------------------------------------------------------------*/
+
+document.addEventListener('DOMContentLoaded', function() {
+    // Get all project blocks
+    const projectBlocks = document.querySelectorAll('.projects__block');
+    
+    // Function to check if an element is in viewport
+    function isInViewport(element) {
+      const rect = element.getBoundingClientRect();
+      return (
+        rect.top <= (window.innerHeight || document.documentElement.clientHeight) &&
+        rect.bottom >= 0
+      );
+    }
+    
+    // Function to handle scroll and show projects
+    function handleScroll() {
+      projectBlocks.forEach(block => {
+        // Add active class to make it visible initially, even before scrolling
+        block.classList.add('active');
+        
+        // If the block is in viewport, ensure it's visible with a nice fade-in effect
+        if (isInViewport(block)) {
+          if (block.style.opacity !== '1') {
+            block.style.transition = 'opacity 0.5s ease-in-out';
+            block.style.opacity = '1';
+          }
+        } else {
+          // Keep blocks visible but with reduced opacity when not in viewport
+          if (!block.classList.contains('already-seen') && block.style.opacity === '1') {
+            block.classList.add('already-seen');
+          }
+        }
+      });
+    }
+    
+    // Run once on page load to show initial blocks
+    handleScroll();
+    
+    // Add scroll event listener
+    window.addEventListener('scroll', handleScroll);
+    
+    // Also handle resize events to recalculate positions
+    window.addEventListener('resize', handleScroll);
+  });
+
 /* 2.1 Animation settings */
 var hSpeed = 100,       // Horizontal scrolling speed in percent. More = slower
     vSpeed = 100,       // Scrolling speed of vertical blocks (news, projects) as a percentage. More = slower

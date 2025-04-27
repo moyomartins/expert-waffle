@@ -56,6 +56,25 @@
       .loader > .circle:nth-of-type(3) {
       	animation-delay: calc(2s / -6);
       }
+      .image-container {
+            margin-top: 10px;
+            margin-bottom: 0.8vw;
+            position: relative;
+            width: 250px;
+            height: 250px;
+            overflow: hidden;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+        .image-container:hover {
+            transform: scale(1.05);
+        }
+        .profile-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
     </style>
   </head>
   <body>
@@ -72,8 +91,28 @@
         <div class="header__left">
           <div class="header__letter">MM</div>
           <div class="header__socials">
-               
-            </div>
+               <!-- Behance -->
+            <!-- <a href="https://behance.net/moyomartins" target="_blank" rel="noopener noreferrer" aria-label="Behance">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="0.5">
+                <path d="M7.803 5.731c.589 0 1.119.051 1.605.155.483.103.895.273 1.243.508.343.235.611.547.804.939.187.387.28.871.28 1.443 0 .62-.14 1.138-.421 1.551-.283.414-.7.753-1.256 1.015.757.219 1.318.602 1.69 1.146.374.549.557 1.205.557 1.975 0 .623-.12 1.161-.359 1.612a3.144 3.144 0 01-.974 1.114c-.408.288-.891.5-1.438.641a6.96 6.96 0 01-1.751.211H2V5.731h5.803zm-.351 4.972c.48 0 .878-.114 1.192-.345.312-.228.463-.604.463-1.119 0-.286-.051-.522-.153-.707a1.143 1.143 0 00-.419-.429 1.74 1.74 0 00-.637-.219 4.122 4.122 0 00-.805-.071H4.71v2.89h2.742zm.151 5.271c.3 0 .572-.028.811-.084a1.786 1.786 0 00.646-.254c.184-.121.328-.283.427-.491.1-.208.148-.475.148-.798 0-.634-.179-1.085-.533-1.358-.355-.27-.831-.404-1.434-.404H4.71v3.39h2.893zm8.565-9.703h4.635v1.113h-4.635V6.271zm5.514 7.617c-.24.371-.549.678-.933.93a4.323 4.323 0 01-1.363.585 6.025 6.025 0 01-1.647.201c-.8 0-1.5-.139-2.1-.421a4.326 4.326 0 01-1.517-1.155 4.946 4.946 0 01-.913-1.741 6.908 6.908 0 01-.303-2.057c0-.76.111-1.457.33-2.098a4.697 4.697 0 01.962-1.645c.425-.456.945-.812 1.559-1.069a5.58 5.58 0 012.052-.388c.845 0 1.573.146 2.188.437a4.142 4.142 0 011.561 1.183c.417.5.727 1.092.929 1.773.202.685.303 1.416.303 2.194v.696h-7.353c.063.648.273 1.147.627 1.499.352.354.881.525 1.578.525.463 0 .867-.118 1.209-.354.342-.235.582-.555.716-.959h2.125zm-2.132-3.964c-.051-.621-.24-1.089-.566-1.41-.326-.323-.791-.481-1.394-.481-.343 0-.633.052-.864.156a1.854 1.854 0 00-.587.388c-.155.159-.271.339-.345.54a2.877 2.877 0 00-.141.598l3.897.209z"/>
+              </svg>
+            </a> -->
+            
+            <!-- Dribbble -->
+            <a href="https://dribbble.com/moyomartins" target="_blank" rel="noopener noreferrer" aria-label="Dribbble">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="0.5">
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm6.605 4.61a8.502 8.502 0 011.93 5.314c-.281-.054-3.101-.629-5.943-.271-.065-.141-.12-.293-.184-.445a25.424 25.424 0 00-.564-1.236c3.145-1.28 4.577-3.124 4.761-3.362zM12 3.475c2.17 0 4.154.814 5.662 2.148-.152.216-1.443 1.941-4.48 3.08-1.399-2.57-2.95-4.675-3.189-5A8.686 8.686 0 0112 3.475zm-3.633.803a53.896 53.896 0 013.167 4.935c-3.992 1.063-7.517 1.04-7.896 1.04a8.581 8.581 0 014.729-5.975zM3.453 12.01v-.26c.37.01 4.512.065 8.775-1.215.25.477.477.965.694 1.453-.109.033-.228.065-.336.098-4.404 1.42-6.747 5.303-6.942 5.629a8.522 8.522 0 01-2.19-5.705zM12 20.547a8.482 8.482 0 01-5.239-1.8c.152-.315 1.888-3.656 6.703-5.337.022-.01.033-.01.054-.022a35.32 35.32 0 011.823 6.475 8.4 8.4 0 01-3.341.684zm4.761-1.465c-.086-.52-.542-3.015-1.659-6.084 2.679-.423 5.022.271 5.314.369a8.468 8.468 0 01-3.655 5.715z"/>
+              </svg>
+            </a>
+
+            <!-- Twitter (X) -->
+            <a href="https://x.com/ninolowo_" target="_blank" rel="noopener noreferrer" aria-label="Twitter (X)">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="0.5">
+                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+              </svg>
+            </a>
+
+          </div>
         </div>
         <div class="header__right">
           <ul class="header__menu">
@@ -83,7 +122,7 @@
             <li><a class="js-scroll-link" href="javascript:;" data-link="3">testimonials</a></li>
             <li><a class="js-scroll-link" href="javascript:;" data-link="4">experience</a></li>
             <li><a class="js-scroll-link" href="javascript:;" data-link="5">articles</a></li>
-            <li><a class="js-scroll-link" href="javascript:;" data-link="6">CONTACT</a></li>
+            <li><a class="js-scroll-link" href="javascript:;" data-link="6">contact me</a></li>
           </ul>
           <div class="header__phone"><a href="tel:+2348112569814">+234 8112569 814</a></div>
         </div>
@@ -109,7 +148,7 @@
                 <div class="number">3.0</div>
               </li>
               <li>
-                <div class="title">tools & experience</div>
+                <div class="title">experience</div>
                 <div class="number">4.0</div>
               </li>
               <li>
@@ -136,11 +175,12 @@
               <div class="content">
                 <div class="content__left">
                   <div class="content__title">
-                    <div class="h1">Clean and Minimal</div>
-                    <div class="h1">Design</div>
+                    <div class="h1">Turning Vision Into Seamless, Human-Centered Products.
+                    </div>
+                    <!-- <div class="h1">Design</div> -->
                   </div>
                   <div class="content__description">
-                    <div class="small">Hello, I’m Moyo Martins, a Digital Product Designer and Manager based in Lagos, Nigeria. I collaborate remotely with clients globally, shaping my design philosophy around human-centered experiences. My focus is on crafting digital designs that are both engaging and exhilarating.</div>
+                    <div class="small">Guided by empathy and inspired by clarity — crafting products that connect, delight, and evolve.</div>
                   </div>
                   <div class="content__btn-block">
                     <!-- <div class="content__btn-label small">(hire me :)</div><a class="content__btn-btn btn btn--arrow js-scroll-link" href="#hireme" data-link="6">
@@ -149,18 +189,24 @@
                       </svg></a> -->
                   </div>
                   <div class="home__numbers">
+
+                    
+
                     <div class="home__number">
                       <div class="home__number-digital" data-number="7">7</div>
-                      <div class="home__number-text small">Years<br>experience</div>
+                      <div class="home__number-text small">+ Years Experience</div>
                     </div>
+                    
                     <div class="home__number">
-                      <div class="home__number-digital" data-number="17">17</div>
-                      <div class="home__number-text small">Design<br>Fields</div>
+                      <div class="home__number-digital" data-number="20">20</div>
+                      <div class="home__number-text small">Industries Served</div>
                     </div>
+
                     <div class="home__number">
-                      <div class="home__number-digital" data-number="25">25</div>
-                      <div class="home__number-text small">Industry<br>Specializations</div>
+                      <div class="home__number-digital" data-number="999 ">999</div>
+                      <div class="home__number-text small">+ Screens Designed</div>
                     </div>
+
                   </div>
                 </div>
                 <div class="content__right">
@@ -188,20 +234,19 @@
                     <div class="h1">projects</div>
                   </div>
                   <ul class="content__menu projects__menu">
-                    <li class="active"><a href="javascript:;" target="_blank" >Getparker - Smart Solutions for Ecommerce Credit & Banking</a></li>
-                    <li><a href="javascript:;">Fint Neobank app leveraging blockchain...</a></li>
+                    <li><a href="javascript:;">Getparker.</a></li>
+                    <li><a href="javascript:;">Fint Neobank app.</a></li>
                     <li><a href="javascript:;">Property insight & management...</a></li>
-                    <li><a href="javascript:;">Infinity - Concept Design for Spot Trading</a></li>
-                    <li><a href="javascript:;">Gigmate - The ultimate platform for musici...</a></li>
+                    <li><a href="javascript:;">Infinity.</a></li>
+                    <li><a href="javascript:;">Gigmate.</a></li>
                     <!-- <li><a href="javascript:;">jonny - personal website</a></li> -->
                   </ul>
-                  <div class="content__btn-block">
-                    <!-- <div class="content__btn-label small">View more...</div><a class="content__btn-btn btn btn--arrow" href="https://dribbble.com/moyomartins" target="_blank" rel="nofollow"> -->
-                      <!-- <svg>
-                        <use xlink:href="./svg/sprite.svg#arrow"></use>
-                      </svg></a> -->
-                  </div>
+                 
                 </div>
+
+                
+
+
                 <div class="content__right">
                   <div class="projects__blocks">
                     <div class="projects__block active"><a><img src="img/project-1.jpg" alt=""></a>
@@ -211,7 +256,7 @@
                           <div class="blog_page-text"> 
                             <div class="blog_page-h1">GetParker.</div>
                             <div class="small">Credit, banking, and analytics designed to help you grow revenue and profitability as fast as you know you can. Uneven cash flow shouldn’t shackle your growth. GetParker is the only card you’ll find that gives you a true full credit period on every single swipe—with repayment periods up to 90 days.</div>
-                            <!-- <div class="small">One touch of a red-hot stove is usually all we need to avoid that kind of discomfort in the future. The same is true as we experience the emotional sensation of stress from our first instances of social rejection or ridicule. We quickly learn to fear and thus automatically avoid potentially stressful situations of all kinds, including the most common of all: </div> -->
+                            
                           <!-- </div><img class="blog_page-banner" src="images/big-banner_item1.svg" alt=""> -->
                           
                           <div class="blog_page-text">
@@ -224,14 +269,14 @@
                               <br>5. User Interface (UI) Design
                               
                             </div>
-                            <!-- <div class="medium">One touch of a red-hot stove is usually all we need to avoid that kind of discomfort in the future. The same is true as we experience the emotional sensation of stress from our first instances of social rejection or ridicule. We quickly learn to fear and thus automatically avoid potentially stressful situations of all kinds, including the most common of all: making mistakes.</div> -->
+                            
                             
                           </div>
-                          <!-- <script class="blog_page-banner" src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
+                          <script class="blog_page-banner" src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
 
                           <dotlottie-player src="https://lottie.host/62e6a7ee-069a-4e2a-a2a7-7695cd505317/NwbHoWpNbQ.json" background="transparent" speed="1" style="width: 100%; height: 540;" loop autoplay></dotlottie-player>
-                             -->
-                          <iframe width="100%" height="540" class="blog_page-banner" src="https://lottie.host/embed/62e6a7ee-069a-4e2a-a2a7-7695cd505317/NwbHoWpNbQ.json" allowfullscreen="allowfullscreen" allow="fullscreen" scrolling="no" frameborder="0"></iframe>
+                            
+                          <!-- <iframe width="100%" height="540" class="blog_page-banner" src="https://lottie.host/embed/62e6a7ee-069a-4e2a-a2a7-7695cd505317/NwbHoWpNbQ.json" allowfullscreen="allowfullscreen" allow="fullscreen" scrolling="no" frameborder="0"></iframe> -->
                           
                           <div class="blog_page-text">
                             <div class="blog_page-h2">Character</div>
@@ -257,7 +302,7 @@
                             <div class="blog_page-h3">Vision</div>
                             <div class="small">By giving businesses more time to repay and smarter tools to manage their finances, Getparker aim's to fuel faster growth and greater profitability. At GetParker, they believe that unpredictable cash flow should never limit growth.
                             </div>
-                            <!-- <div class="small">One touch of a red-hot stove is usually all we need to avoid that kind of discomfort in the future. The same is true as we experience the emotional sensation of stress from our first instances of social rejection or ridicule. We quickly learn to fear and thus automatically avoid potentially stressful situations of all kinds, including the most common of all: making mistakes.</div> -->
+                            
                           
                           
                             <div class="img-grid">
@@ -304,11 +349,15 @@
                                <br>6. Concept and Branding 
                              </div>
                           </div>
+
+                            <script class="blog_page-banner" src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
+                            <dotlottie-player src="https://lottie.host/78e719ea-7383-4176-b186-da2a9b7199d8/t44Nl1rdMq.json" background="transparent" speed="1" style="width: 100%; height: 540" loop autoplay></dotlottie-player>
+
                             <!-- <script class="blog_page-banner" src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
 
-                            <dotlottie-player src="https://lottie.host/72cec346-d3e0-48d4-a8c3-9fd02912e9b6/m5DsNfR5q4.json" background="transparent" speed="1" style="width: 100%; height: 540;" loop autoplay></dotlottie-player>
-                           -->
-                          <iframe width="100%" height="540" class="blog_page-banner" src="https://lottie.host/embed/72cec346-d3e0-48d4-a8c3-9fd02912e9b6/m5DsNfR5q4.json" allowfullscreen="allowfullscreen" allow="fullscreen" scrolling="no" frameborder="0"></iframe>
+                            <dotlottie-player src="https://lottie.host/72cec346-d3e0-48d4-a8c3-9fd02912e9b6/m5DsNfR5q4.json" background="transparent" speed="1" style="width: 100%; height: 540;" loop autoplay></dotlottie-player> -->
+                          
+                          <!-- <iframe width="100%" height="540" class="blog_page-banner" src="https://lottie.host/embed/72cec346-d3e0-48d4-a8c3-9fd02912e9b6/m5DsNfR5q4.json" allowfullscreen="allowfullscreen" allow="fullscreen" scrolling="no" frameborder="0"></iframe> -->
                           <div class="blog_page-text">
                             <div class="blog_page-h2">Character</div>
                             <div class="small">Fint Neo Bank, embodying modernity, blockchain technology, and financial innovation. It reflects security, transparency, and futuristic financial solutions.
@@ -446,12 +495,12 @@
                                   <div class="column">
                                     
                                     <!-- <img src="img/fint-1.jpg"> -->
-                                    <img src="img/fint-5.jpg">
+                                    <!-- <img src="img/fint-5.jpg"> -->
                                     <!-- <img src="img/get-parker-4.jpg"> -->
   
                                   </div>
                                   <div class="column">
-                                    <img src="img/fint-6.jpg">
+                                    <!-- <img src="img/fint-6.jpg"> -->
                                     <!-- <img src="img/fint-4.jpg"> -->
                                     <!-- <img src="img/get-parker-5.jpg"> -->
                                   </div>
@@ -466,15 +515,15 @@
                       </section>
                     </div>
                     
+                   
 
-                    <div class="projects__block active"><a href="#" target="_blank" rel="nofollow"><img src="img/project-3.jpg" alt=""></a>
+                    <div class="projects__block active"><a><img src="img/project-3.jpg" alt=""></a>
                       <section class="blog_page-content">
                         <div class="blog_page-container">
                           <div class="blog_page-text"> 
                             <div class="blog_page-h1">Property insight and management platform.</div>
                             <div class="small">The Property Insight and Management Platform aims to provide real estate professionals with powerful tools to manage and gain insights from their property data. The platform will streamline the import, analysis, and visualization of property-related data while allowing for secure, role-based access and providing scenario-based forecasting capabilities.</div>
-                            <!-- <div class="small">One touch of a red-hot stove is usually all we need to avoid that kind of discomfort in the future. The same is true as we experience the emotional sensation of stress from our first instances of social rejection or ridicule. We quickly learn to fear and thus automatically avoid potentially stressful situations of all kinds, including the most common of all: </div> -->
-                          <!-- </div><img class="blog_page-banner" src="images/big-banner_item1.svg" alt=""> -->
+                            
                           
                           <div class="blog_page-text">
                            
@@ -488,11 +537,11 @@
                               <br>• Real-time data updates and advanced forecasting models. <br>
                              </div>
                           </div>
-                            <!-- <script class="blog_page-banner" src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
+                            <script class="blog_page-banner" src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
 
                             <dotlottie-player src="https://lottie.host/e2a0a707-80f6-4286-9700-a8e7c370c6f6/oDxdhBPhHa.json" background="transparent" speed="1" style="width: 100%; height: 540;" loop autoplay></dotlottie-player>
-                           -->
-                            <iframe width="100%" height="540" class="blog_page-banner" src="https://lottie.host/embed/dd0b696a-89a9-44dd-a293-8fa6b140bdec/Nf4rMEJTAE.lottie" allowfullscreen="allowfullscreen" allow="fullscreen" scrolling="no" frameborder="0"></iframe>
+                          
+                            <!-- <iframe width="100%" height="540" class="blog_page-banner" src="https://lottie.host/embed/dd0b696a-89a9-44dd-a293-8fa6b140bdec/Nf4rMEJTAE.lottie" allowfullscreen="allowfullscreen" allow="fullscreen" scrolling="no" frameborder="0"></iframe> -->
 
                           
 
@@ -558,10 +607,9 @@
                       <section class="blog_page-content">
                         <div class="blog_page-container">
                           <div class="blog_page-text"> 
-                            <div class="blog_page-h1">Infinity - Concept Design for Spot Trading</div>
+                            <div class="blog_page-h1">Infinity</div>
                             <div class="small">Infinity emphasizes high performance, offering real-time market data, rapid order execution, and advanced charting tools to enhance the trading experience. With a commitment to transparency, the platform ensures that users have full visibility into market movements, order books, and transaction histories, fostering trust and confidence in every trade. Infinity also integrates robust security measures, protecting users’ assets with advanced encryption and multi-layered security protocols.Designed to be flexible, Infinity supports a wide range of assets, from cryptocurrencies to traditional stocks and commodities, giving users the freedom to diversify their portfolios within a single platform. Whether you are a professional trader or a newcomer to spot trading, Infinity aims to provide a seamless, powerful, and reliable trading environment that aligns with the demands of modern financial markets..</div>
-                            <!-- <div class="small">One touch of a red-hot stove is usually all we need to avoid that kind of discomfort in the future. The same is true as we experience the emotional sensation of stress from our first instances of social rejection or ridicule. We quickly learn to fear and thus automatically avoid potentially stressful situations of all kinds, including the most common of all: </div> -->
-                          <!-- </div><img class="blog_page-banner" src="images/big-banner_item1.svg" alt=""> -->
+                            
                           
                             
                           
@@ -574,10 +622,9 @@
                       <section class="blog_page-content">
                         <div class="blog_page-container">
                           <div class="blog_page-text"> 
-                            <div class="blog_page-h1">Gigmate - The ultimate platform for musicians, producers, and enthusiasts</div>
+                            <div class="blog_page-h1">Gigmate</div>
                             <div class="small">Gigmate is a revolutionary tool designed to provide musicians, producers, and enthusiasts with greater flexibility and control over the mixing and mastering process. With Gigmate, users can individually adjust the volume of each stem within a song, allowing for a fully customized mix. This unique feature empowers users to focus on specific instruments or vocals, making it ideal for practice sessions or detailed listening experiences. Whether you're preparing for a gig, refining your skills, or exploring creative possibilities, Gigmate offers a seamless, user-friendly interface that enhances your interaction with music. By giving users control over each layer of sound, Gigmate redefines the way we engage with music, making it a valuable tool for both professionals and hobbyists alike.</div>
-                            <!-- <div class="small">One touch of a red-hot stove is usually all we need to avoid that kind of discomfort in the future. The same is true as we experience the emotional sensation of stress from our first instances of social rejection or ridicule. We quickly learn to fear and thus automatically avoid potentially stressful situations of all kinds, including the most common of all: </div> -->
-                          <!-- </div><img class="blog_page-banner" src="images/big-banner_item1.svg" alt=""> -->
+                            
                           
                             
                           
@@ -602,12 +649,23 @@
               <div class="content">
                 <div class="content__left">
                   <div class="content__title">
-                    <div class="h1">Explore my</div>
-                    <div class="h1">profile</div>
+                    <div class="h1">Explore My Expertise in Crafting Digital Solutions That Drive Success</div>
+                    <!-- <div class="h1">profile</div> -->
                   </div>
                   <div class="content__description">
-                    <div class="small">With 13 years of experience in the digital design industry, I’m excited to bring my expertise to your business, helping you consistently create outstanding digital products and content that captivate your clients and build a lasting connection with your brand</div>
+                    <div class="small">With a holistic approach, I design and shape digital solutions that connect with users, drive engagement, and align with strategic goals, from start to finish
+                    </div>
                   </div>
+                  <div class="content__description">
+                    <div class="small"> <strong>Why Choose Me?</strong> <br>
+                      <br> Every brand has a story and I help you tell it through powerful digital experiences.
+                      By blending human-centered design with strategic growth initiatives, I create solutions that spark connection, inspire loyalty, and future-proof your business.
+                      Design isn’t just how it looks, it’s how it makes your users feel, grow, and stay.
+                    </div>
+                  </div>
+                  <!-- <div class="image-container" id="profileImage">
+                    <img src="images/pp.JPG" alt="Profile Image" class="profile-image">
+                  </div> -->
                   <!-- <div class="content__btn-block">
                     <a class="content__btn-btn btn btn--arrow" style="background-color: #000000;" href="https://www.behance.net/martinsmoyosore"><div class="content__btn-label small"></div>
                       <svg>
@@ -616,35 +674,43 @@
                   </div> -->
                 </div>
                 <div class="content__right">
-                  <div class="content__subtitle">Design <span>services</span></div>
+                  <div class="content__subtitle">My <span>services</span> include...</div>
                   <div class="content__awards awards__list">
                     <div class="content__award">
                       <div class="content__award-img"><img src="img/award-1.png" alt=""></div>
                       <div class="content__award-title">
                         <p>Product Design</p>
                       </div>
-                      <div class="content__award-text small">My experience in this multi-disciplinary field spans from idea generation, market research, sketching & prototyping to launch & marketing.</div>
+                        <div class="content__award-text small">I design with empathy and intent, shaping intuitive, beautiful web and mobile experiences that solve real-world problems. <br>
+                        <br> From first sketch to final launch, every detail is crafted to meet user needs and drive real business value.</div>
+
                     </div>
+                    
+                    <div class="content__award">
+                      <div class="content__award-img"><img src="img/award-3.png" alt=""></div>
+                      <div class="content__award-title">
+                        <p>GPM {growth-product management}</p>
+                      </div>
+                      <div class="content__award-text small">Beyond building products, I drive their <strong>Growth</strong> . <br>
+                        <br> Through strategic planning, user research, and data-driven decisions, I guide products from concept to market success, fueling user acquisition, retention, and meaningful engagement at every stage.</div>
+                    </div>
+
                     <div class="content__award">
                       <div class="content__award-img"><img src="img/award-2.png" alt=""></div>
                       <div class="content__award-title">
                         <p>Communication Design</p>
                       </div>
-                      <div class="content__award-text small">Being a communication designer encompasses various disciplines, including graphic design, typography, illustration, branding, advertising, and multimedia design.</div>
+                      <div class="content__award-text small">Your brand deserves more than just visuals, it deserves a voice, a feeling, a presence. <br>
+                      <br>  I create designs that not only catch the eye but also tell your story with clarity, creativity, and emotional resonance across digital and print platforms.</div>
                     </div>
-                    <div class="content__award">
-                      <div class="content__award-img"><img src="img/award-3.png" alt=""></div>
-                      <div class="content__award-title">
-                        <p>GPM {growth product manager}</p>
-                      </div>
-                      <div class="content__award-text small">As a Growth Product manager i initiate product strategy & roadmapping. implement user acquisition & retention strategies, conversion optimization, conduct customer feedback and insights... </div>
-                    </div>
+
                     <div class="content__award">
                       <div class="content__award-img"><img src="img/award-4.png" alt=""></div>
                       <div class="content__award-title">
                         <p>cx design</p>
                       </div>
-                      <div class="content__award-text small">As a Customer Experience Desinger i essentially do what a product manager and desinger do combined.</div>
+                      <div class="content__award-text small">Great products aren't enough, great experiences are what people remember. <br>
+                      <br> I map and design customer journeys that feel effortless, intuitive, and human. turning every interaction into an opportunity for deeper connection and loyalty.</div>
                     </div>
                   </div>
                 </div>
@@ -664,10 +730,10 @@
               <div class="content" style="background-image: url(images/testmonials-bg.png); background-size: auto 100%; background-repeat: no-repeat; background-position: center center;">
                 <div class="content__left">
                   <div class="content__title">
-                    <div class="h1">+101</div>
-                    <div class="h1">happy</div>
-                    <div class="h1">clients</div>
-                    <div class="small">I take great pride in my work and <br> each project holds a special place in my heart.</div>
+                    <div class="h1">100+ Projects. One Goal: Excellence.</div>
+                    <!-- <div class="h1">happy</div> -->
+                    <!-- <div class="h1">clients</div> -->
+                    <!-- <div class="small">I take great pride in my work and <br> each project holds a special place in my heart.</div> -->
                   </div>
                   <div class="testimonials__clients">
                     <div class="testimonials__client"><img src="img/client-1.svg" alt=""></div>
@@ -677,7 +743,7 @@
                   </div>
                 </div>
                 <div class="content__right">
-                  <div class="content__subtitle"><span>Creativity</span> & dedicatation are things my studio brings your business</div>
+                  <div class="content__subtitle">Blending design, strategy, and product leadership, I craft  <span>digital experiences</span>  that drive growth and deepen user connection</div>
                   <div class="content__slider slides testimonials__slider">
                     <div class="slides__container">
                       <div class="slides__inner">
@@ -711,7 +777,7 @@
                           <div class="content__slider-staff small">Apollo</div>
                         </div>
                       </div>
-                    </div>
+                  </div>
                     <div class="slides__controls">
                       <button class="slides__btn slides__btn--prev btn btn--invert btn--arrow" id="prevButton" style="border: 0px; background-color: #000000;">
                         <svg>
@@ -734,7 +800,7 @@
               <div class="sticky-title">
                 <ul>
                   <li>
-                    <div>TOOLS & EXPERIENCE</div>
+                    <div>EXPERIENCE</div>
                     <div>4.0</div>
                   </li>
                 </ul>
@@ -743,11 +809,30 @@
                 <div class="content__bg" style="background-image: url(images/exp-bg.jpg);"></div>
                 <div class="content__left">
                   <div class="content__title">
-                    <div class="h1"> Design Tools &</div>
-                    <div class="h1">experience</div>
+                    <div class="h1"> Experience & Tools </div>
+                    <div class="h1"></div>
                   </div>
                   <div class="content__description">
-                    <div class="small">With seven years of experience in designing websites, I possess a comprehensive understanding of the latest trends and directions in modern design. My expertise extends to navigating the intricacies of contemporary design tools, ensuring adherence to accessibility and usability standards.</div>
+                    
+                    <div class="image-container" id="profileImage">
+                      <img src="images/pp.JPG" alt="Profile Image" class="profile-image">
+                    </div>
+
+                    <div class="content__description small">I'm a <strong>Senior Product Designer</strong>  and <strong>Product Manager</strong>  with over 7 years of experience designing and shaping digital products for startups, enterprises, and global brands across web and mobile platforms.
+                      Rooted in a foundation of architectural design and driven by a human-centered approach, I specialize in creating clean, intuitive, and impactful experiences that align business goals with user needs.
+                      
+                      Throughout my career, I have led product discovery, user research, and strategic roadmapping initiatives,collaborating with cross-functional teams to transform complex ideas into scalable solutions. My expertise spans across UX/UI design, motion design, interaction design, design systems, usability testing, and product strategy, enabling me to craft digital experiences that are not only visually compelling but also highly functional.
+                      
+                      As a Product Manager, I have navigated product lifecycles from ideation through launch, ensuring alignment between user needs, business objectives, and technical constraints. I thrive in fast-paced, agile environments where collaboration, critical thinking, and stakeholder engagement are essential to delivering results.
+                      
+                      My work has spanned multiple industries, including fintech, real estate, education, enterprise technology, and consumer products. I am experienced in collaborating remotely with international teams across the U.S., Europe, and Africa, and have built a reputation for delivering design solutions that are empathetic, strategic, and user-focused.
+                      
+                      Beyond the screen, I actively mentor young designers, advocate for nonprofit tech initiatives, and continuously push the boundaries of creative problem-solving through a deep commitment to learning and innovation.
+                      
+                      When working with me, you can expect a thoughtful blend of strategic thinking, meticulous design execution, and an unwavering dedication to creating digital experiences that are both beautiful and meaningful.
+                      
+                      </div>
+                    
                   </div>
                   <!-- <div class="content__btn-block"><a class="content__btn-btn btn" href="#">resume</a></div> -->
                 </div>
@@ -758,35 +843,35 @@
                       <div class="content__award-title"><span class="small">since 2019</span>
                         <p>Figma</p>
                       </div>
-                      <div class="content__award-text small">After mastering design constraints, prototyping, variants, design systems, and more, I gained a profound understanding of the challenges faced by both senior and junior developers when it comes to recreating designs.</div>
+                      <div class="content__award-text small">As a core part of my design process, Figma serves as my go-to platform for crafting seamless user interfaces and comprehensive design systems. From prototyping and design systems to collaborating with remote teams, Figma enables me to translate complex ideas into interactive, high-fidelity designs. I also appreciate its capability to streamline feedback loops, ensuring rapid iteration and refined designs, which is crucial when working on both design and product management tasks.</div>
                     </div>
                     <div class="content__award">
                       <div class="content__award-img"><img src="img/soc-be.svg" alt=""></div>
                       <div class="content__award-title"><span class="small">since 2021</span>
                         <p>miro</p>
                       </div>
-                      <div class="content__award-text small">Like Figjam i find Miro to be an indispensable tool for fostering creativity and collaboration within my team.</div>
+                      <div class="content__award-text small">Miro is indispensable in my process, especially during early-stage ideation and collaborative workshops. Whether I'm creating user journey maps, wireframes, or facilitating design sprints with cross-functional teams, Miro helps visualize and organize ideas in a way that encourages creativity and alignment. It’s a space where we can quickly iterate on concepts, gather insights, and chart the next steps for product development, making it invaluable for both design and strategy alignment.</div>
                     </div>
                     <div class="content__award">
                       <div class="content__award-img"><img src="img/soc-tw.svg" alt=""></div>
                       <div class="content__award-title"><span class="small">since 2013</span>
                         <p>adobe</p>
                       </div>
-                      <div class="content__award-text small">I use Adobe XD, Illustrator, Photoshop, After-effect, Premire Pro, Indesign and i combine most of these tools togeter with Figma to achive my design direction/goal and design an experience that fosters user retention and boosts conversion rate </div>
+                      <div class="content__award-text small">The Adobe Creative Suite is where my <strong>Graphic Design</strong>  expertise shines. From Adobe XD for interactive prototypes to Illustrator for vector-based designs, Photoshop for UI elements, and After Effects for <strong>Motion Design</strong> , Adobe tools allow me to create visually striking designs that go beyond static elements. I leverage these tools in tandem with Figma to deliver pixel-perfect designs that align with a brand's identity, ensuring the experience is both aesthetic and functional. Premiere Pro and InDesign also come into play when crafting videos or product documentation for pitches or presentations.</div>
                     </div>
                     <div class="content__award">
                       <div class="content__award-img"><img src="img/soc-inst.svg" alt=""></div>
                       <div class="content__award-title"><span class="small">since 2023</span>
                         <p>linear</p>
                       </div>
-                      <div class="content__award-text small">I enjoy a well-designed platform that enhances efficiency and creativity in the product development journey.</div>
+                      <div class="content__award-text small">Linear is an integral part of my product management toolkit. Its intuitive interface and powerful features allow me to manage product roadmaps, track tasks, and prioritize efficiently across the entire product development cycle. As a Senior Product Designer, Linear empowers me to stay organized, manage timelines, and collaborate seamlessly with developers and other stakeholders, ensuring alignment between design and engineering while driving the product forward.</div>
                     </div>
                     <div class="content__award">
                       <div class="content__award-img"><img src="img/soc-in.svg" alt=""></div>
                       <div class="content__award-title"><span class="small"> well... </span>
                         <p>spotify</p>
                       </div>
-                      <div class="content__award-text small">This is the most important tool by the way</div>
+                      <div class="content__award-text small">While Spotify is more of a personal tool, it plays a surprisingly vital role in my workflow. I use music as a way to enhance my creativity and maintain focus throughout the design and product management process. Whether I'm brainstorming new design ideas, fine-tuning prototypes, or running user research sessions, a well-curated playlist keeps me energized and in the zone. It’s a small, but key tool that helps fuel my productivity and maintain a positive mindset.</div>
                     </div>
                   </div>
                 </div>
@@ -806,12 +891,12 @@
               <div class="content">
                 <div class="content__left">
                   <div class="content__title">
-                    <div class="h1">write <br> ups</div>
+                    <div class="h1">write up’s</div>
                     <div class="h1"></div>
                     <div class="small"></div>
                   </div>
                   <ul class="content__menu news__menu">
-                    <li class="active"><a href="javascript:;">(coming soon) That its not in a book does that mean...</a></li>
+                    <li class="active"><a href="javascript:;"> <b>(Coming Soon)</b> <br>If It’s Not Written in a Book, Does That...</a></li>
                     <!-- <li><a href="javascript:;">Lemon Illustration design</a></li> -->
                     <!-- <li><a href="javascript:;">Paul theme Branding</a></li> -->
                     <!-- <li><a href="javascript:;">Best typography 2020</a></li> -->
@@ -882,51 +967,35 @@
                 </ul>
               </div>
               <div class="content">
-                <div class="content__left">
+                <div class="content__left contact_mobile">
                   <div class="content__title">
-                    <div class="h1 hire">Hire me</div>
-                    <div class="small">I love my work and every project is my pride</div>
+                    <div class="content__title">
+                      <div class="h1">Let’s Create Something Remarkable Together
+                      </div>
+                      <!-- <div class="h1">Design</div> -->
+                    </div>
+                    <div class="content__description">
+                      <div class="small">Every great project starts with a conversation. Let's build something that matters.</div>
+                    </div>
+                    <!-- <div class="h1 hire">Let’s Create Something Remarkable Together</div> -->
+                    <!-- <div class="small">Every great project starts with a conversation. Let's build something that matters.</div> -->
                   </div>
+
+
                   <ul class="content__menu contacts__menu">
                     <li class="active" style="color: #bdf100;"><a href=mailto:“martinsmoyo26@gmail.com” target="_blank">martinsmoyo26@gmail.com</a></li>
                     <!-- <li class="active"><a class="noicon" href="javascript:;" onclick="window.open('skype:robert')">skype: robert</a></li> -->
                     <li class="active"><a href="https://dribbble.com/moyomartins" target="_blank">dribbble.com/moyomartins</a></li>
-                    <li class="active"><a href="https://www.behance.net/martinsmoyosore" target="_blank">www.behance.net/martinsmoyosore</a></li>
-                    <!-- <li class="active"><a class="noicon" href="https://t.me/moyomartins" target="_blank">telegram: moyomartins</a></li> -->
-                    <li class="active"><a class="noicon" href="https://open.spotify.com/user/vw9jk5wgx71lx1fxy47x5rl9o?si=e69973fda7aa4ec1" target="_blank">Spotify</a></li>
+                    <li class="active"><a href="https://www.behance.net/martinsmoyosore" target="_blank">behance.net/martinsmoyosore</a></li>
+                    <li class="active"><a href="https://calendly.com/martinsmoyo26/30min" target="_blank">Calendly</a></li>
+                    <li class="active"><a href="https://open.spotify.com/user/vw9jk5wgx71lx1fxy47x5rl9o?si=e69973fda7aa4ec1" target="_blank">Spotify</a></li>
                   </ul>
-                  <div class="contacts__copyright small">© Martins 2024.  All Rights Resevered</div>
+
+                  
+                  <div class="contacts__copyright small">© Martins 2025.  All Rights Resevered</div>
                 </div>
                 <div class="content__right">
-                  <div class="content__subtitle">Let's grab a cup of coffee and jump on an exciting conversation. <span>chat with me.</span> </div>
-                  <!-- <form class="content__contacts contacts__form js-contact-form" method="post">
-                    <div class="content__brief">
-                      <div class="content__brief-title">
-                        <label class="input-file">
-                          <input type="file" name="file" id="brief"><span>send a brief</span>
-                        </label>
-                      </div>
-                      <div class="content__brief-text small">I recommend filling out a brief to assess the cost of the project. <label for="brief">Brief</label></div>
-                    </div>
-                    <div class="content__form">
-                      <label class="content__form-input">
-                        <input type="text" name="name"><span class="content__form-placeholder">name</span>
-                      </label>
-                      <label class="content__form-input">
-                        <input type="email" name="emal" required=""><span class="content__form-placeholder">EMAIL *</span>
-                      </label>
-                      <label class="content__form-input">
-                        <input type="text" name="msg" required="" minlength="10"><span class="content__form-placeholder">MESSAGE *</span>
-                      </label>
-                      <div class="content__form-btn">
-                        <button class="btn btn--arrow" style="background-color: #000000;" type="submit">
-                          <svg>
-                            <use xlink:href="./svg/sprite.svg#arrow"></use>
-                          </svg>
-                        </button>
-                      </div>
-                    </div>
-                  </form> -->
+                 
                 </div>
               </div>
             </section>
