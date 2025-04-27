@@ -55,43 +55,38 @@ document.addEventListener('DOMContentLoaded', function() {
     const projectBlocks = document.querySelectorAll('.projects__block');
     
     // Function to check if an element is in viewport
-    function isInViewport(element) {
-      const rect = element.getBoundingClientRect();
+    function isElementInViewport(el) {
+      const rect = el.getBoundingClientRect();
       return (
-        rect.top <= (window.innerHeight || document.documentElement.clientHeight) &&
+        rect.top <= (window.innerHeight || document.documentElement.clientHeight) * 1.25 &&
         rect.bottom >= 0
       );
     }
     
-    // Function to handle scroll and show projects
+    // Function to handle scroll events
     function handleScroll() {
       projectBlocks.forEach(block => {
-        // Add active class to make it visible initially, even before scrolling
-        block.classList.add('active');
-        
-        // If the block is in viewport, ensure it's visible with a nice fade-in effect
-        if (isInViewport(block)) {
-          if (block.style.opacity !== '1') {
-            block.style.transition = 'opacity 0.5s ease-in-out';
-            block.style.opacity = '1';
-          }
-        } else {
-          // Keep blocks visible but with reduced opacity when not in viewport
-          if (!block.classList.contains('already-seen') && block.style.opacity === '1') {
-            block.classList.add('already-seen');
-          }
+        if (isElementInViewport(block)) {
+          block.classList.add('active');
         }
       });
     }
     
-    // Run once on page load to show initial blocks
+    // Initial check on page load
     handleScroll();
     
-    // Add scroll event listener
+    // Listen for scroll events
     window.addEventListener('scroll', handleScroll);
     
-    // Also handle resize events to recalculate positions
-    window.addEventListener('resize', handleScroll);
+    // Also reveal all blocks if the section is clicked
+    const projectsSection = document.querySelector('.projects__blocks');
+    if (projectsSection) {
+      projectsSection.addEventListener('click', function() {
+        projectBlocks.forEach(block => {
+          block.classList.add('active');
+        });
+      });
+    }
   });
 
 /* 2.1 Animation settings */
