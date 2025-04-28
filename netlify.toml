@@ -1,0 +1,10 @@
+[[headers]]
+  for = "/*"
+    [headers.values]
+    Access-Control-Allow-Origin = "*"
+
+[[redirects]]
+  from = "/lottie-proxy/*"
+  to = "https://lottie.host/:splat"
+  status = 200
+  force = true
