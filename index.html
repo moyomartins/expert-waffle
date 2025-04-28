@@ -272,9 +272,19 @@
                             
                             
                           </div>
-                          <script class="blog_page-banner" src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
-
-                          <dotlottie-player src="https://lottie.host/62e6a7ee-069a-4e2a-a2a7-7695cd505317/NwbHoWpNbQ.json" background="transparent" speed="1" style="width: 100%; height: 540;" loop autoplay></dotlottie-player>
+                          <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.10.2/lottie.min.js"></script>
+                            <div id="lottie-container" style="width: 100%; height: 540px;"></div>
+                          <script>
+                            document.addEventListener('DOMContentLoaded', function() {
+                              lottie.loadAnimation({
+                                container: document.getElementById('lottie-container'),
+                                renderer: 'svg',
+                                loop: true,
+                                autoplay: true,
+                                path: 'https://lottie.host/62e6a7ee-069a-4e2a-a2a7-7695cd505317/NwbHoWpNbQ.json'
+                              });
+                            });
+                          </script>
                             
                           <!-- <iframe width="100%" height="540" class="blog_page-banner" src="https://lottie.host/embed/62e6a7ee-069a-4e2a-a2a7-7695cd505317/NwbHoWpNbQ.json" allowfullscreen="allowfullscreen" allow="fullscreen" scrolling="no" frameborder="0"></iframe> -->
                           
